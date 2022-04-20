@@ -5,18 +5,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class ButtonListener implements ActionListener{
-    @Override
-    public void actionPerformed(ActionEvent e){
-
-        JOptionPane.showMessageDialog(null, "You pushed the Exit button!!");
-
-    }
-}
 public class Main {
 
-
     public static void main(String[] args)throws FileNotFoundException, Exception  {
+
         //Black Panel
         JPanel auth = new JPanel();
         auth.setBackground(Color.black);
@@ -58,7 +50,7 @@ public class Main {
         trivia.add(button2);
         button2.addActionListener((event) -> {
             try {
-                TriviaMode();
+                triviaMode();
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
@@ -95,7 +87,7 @@ public class Main {
         while(option!=3) {
             //1
             if(option==1) {
-                TriviaMode();
+                triviaMode();
                 //2
             }else if (option==2) {
                 authenticHi( );
@@ -112,7 +104,7 @@ public class Main {
         }//end of while loop
     }
 
-    public static void TriviaMode() throws FileNotFoundException {
+    public static void triviaMode() throws FileNotFoundException {
         //Create a variable to store the minimum value
         // start it at some huge value
         int min = 1000;
