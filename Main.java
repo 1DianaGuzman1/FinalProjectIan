@@ -88,8 +88,6 @@ public class Main {
         while(option!=3) {
             //1
             if(option==1) {
-                System.out.println("Here is a fun fact about Haiku's");
-                System.out.println("Did you know.....");
                 TriviaMode();
                 //2
             }else if (option==2) {
@@ -139,8 +137,10 @@ public class Main {
                 t.setnewCardOrNot(tVal+1);
             }
         }
-
         save(alternativeList);
+
+        System.out.println("Here is a fun fact about Haiku's");
+        System.out.println("Did you know.....");
         System.out.println(minQuestion);
 
     }
