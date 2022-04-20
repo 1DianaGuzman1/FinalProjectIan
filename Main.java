@@ -59,7 +59,7 @@ public class Main {
         JButton button3 = new JButton("Exit");
         frame.add(exit);
         exit.add(button3);
-
+        //Exits program
         button3.addActionListener((event) -> System.exit(0));
 
 
