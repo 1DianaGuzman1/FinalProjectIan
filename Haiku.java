@@ -23,27 +23,27 @@ public class Haiku {
         this.line2 = toList(line2);
         this.line3 = toList(line3);
     }
-
+//constructor that reads lines from file
     public Haiku(Scanner in) {
         this.line1 = toList(in.nextLine());
         this.line2 = toList(in.nextLine());
         this.line3 = toList(in.nextLine());
 //       in.nextLine();
     }
-
+//converts line from file into and arrayList, splitting each word
     private ArrayList<String> toList(String line){
         String[] lineArr = line.split(" ");
         ArrayList<String> lineList = new ArrayList(Arrays.asList(lineArr));
         return lineList;
     }
-
+//prints haiku
     public void print(){
         System.out.println(this.line1);
         System.out.println(this.line2);
         System.out.println(this.line3);
         System.out.println();
     }
-
+//prints syllable count for each line in haiku
     public void printSyll(){
         for(String s : this.line1){
 //            System.out.println("syllables for string " + s + " is " + Authenticator.SyllableCount(s));
@@ -62,7 +62,7 @@ public class Haiku {
         System.out.println("syllables in line 3: "+this.line3Count+"\n");
 
     }
-
+//generates random haiku, non-funcitional
     public Haiku haikuGen(){
         Random rand = new Random();
         try{

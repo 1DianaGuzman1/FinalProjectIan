@@ -2,8 +2,10 @@ package com.jetbrains;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.util.*;
-
+//this class is the syllable authenticator to determine validity of haiku
 public class Authenticator {
+    //counts syllables of haikus, didnt think about words that are exceptions to this rule because english
+    //gets the general number of syllables, not perfect though
     static public int syllableCount(String s) {
         int counter = 0;
         s = s.toLowerCase(); // converting all string to lowercase
