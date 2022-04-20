@@ -8,7 +8,9 @@ import java.awt.event.*;
 class ButtonListener implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
+
         JOptionPane.showMessageDialog(null, "You pushed the Exit button!!");
+
     }
 }
 public class Main {
@@ -43,16 +45,18 @@ public class Main {
         frame.setSize(480, 480);
 
 
-        //Button 1 Trivia
-        JButton button1 = new JButton("Trivia mode");
-        frame.add(trivia);
-        trivia.add(button1);
 
-
-        //Button 2 Authenticator
-        JButton button2 = new JButton("Authenticator");
+        //Button 1 Authenticator
+        JButton button1 = new JButton("Authenticator");
         frame.add(auth);
-        auth.add(button2);
+        auth.add(button1);
+
+        //Button 2 Trivia
+        JButton button2 = new JButton("Trivia mode");
+        frame.add(trivia);
+        trivia.add(button2);
+        button2.addActionListener((event) -> System.exit(0));
+
 
         //Button 3 Exit
         // set the program to do a custom thing when we hit close
