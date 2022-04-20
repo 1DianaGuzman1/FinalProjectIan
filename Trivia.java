@@ -1,6 +1,5 @@
 package com.jetbrains;
-import java.util.*;
-import java.io.*;
+//This class pulls questions and answers from the facts.txt file
 
 public class Trivia {
     private String trivQuestion;
@@ -24,15 +23,6 @@ public class Trivia {
     }
     public int getnewCardOrNot() {
         return this.newCardOrNot;
-    }
-
-
-    public boolean ask( ) {
-        if (newCardOrNot == 0) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
 }
