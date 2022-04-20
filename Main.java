@@ -91,22 +91,7 @@ public class Main {
                 TriviaMode();
                 //2
             }else if (option==2) {
-                String line1 = ("this is my haiku");
-                String line2 = ("seven syllable word dog");
-                String line3 = ("smooth brain coding hard");
-                String file = ("haikus/haiku.haiku");
-
-                Haiku haiku1 = new Haiku(line1,line2,line3);
-
-                haiku1.print();
-
-                HaikuDeck deck = new HaikuDeck(file);
-
-//                deck.printDeckSyll();
-
-                haiku1.printSyll();
-//        Haiku random = haikuGen();
-//        random.print();
+                authenticHi( );
 
             }else{
                 System.out.println("Please enter a number between 1 and 3.");
@@ -186,5 +171,23 @@ public class Main {
         }
 
     }//End of save Method
+    public static void authenticHi( ){
+        String line1 = ("this is my haiku");
+        String line2 = ("seven syllable word dog");
+        String line3 = ("smooth brain coding hard");
+        String file = ("haikus/haiku.haiku");
 
+        Haiku haiku1 = new Haiku(line1,line2,line3);
+
+        haiku1.print();
+
+        HaikuDeck deck = new HaikuDeck(file);
+
+//                deck.printDeckSyll();
+
+        haiku1.printSyll();
+//        Haiku random = haikuGen();
+//        random.print();
+
+    }
 }
