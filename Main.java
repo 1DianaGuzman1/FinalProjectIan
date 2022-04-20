@@ -55,7 +55,13 @@ public class Main {
         JButton button2 = new JButton("Trivia mode");
         frame.add(trivia);
         trivia.add(button2);
-        button2.addActionListener((event) -> System.exit(0));
+        button2.addActionListener((event) -> {
+            try {
+                TriviaMode();
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        });
 
 
         //Button 3 Exit
