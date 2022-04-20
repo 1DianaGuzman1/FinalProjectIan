@@ -50,6 +50,7 @@ public class Main {
         JButton button1 = new JButton("Authenticator");
         frame.add(auth);
         auth.add(button1);
+        button1.addActionListener((event) -> authenticHi());
 
         //Button 2 Trivia
         JButton button2 = new JButton("Trivia mode");
