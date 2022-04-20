@@ -182,11 +182,9 @@ public class Main {
 
         HaikuDeck deck = new HaikuDeck(file);
 
-//                deck.printDeckSyll();
 
         haiku1.printSyll();
-//        Haiku random = haikuGen();
-//        random.print();
+
 
     }
 }
