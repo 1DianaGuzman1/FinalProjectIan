@@ -5,18 +5,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class ButtonListener implements ActionListener{
-    @Override
-    public void actionPerformed(ActionEvent e){
-
-        JOptionPane.showMessageDialog(null, "You pushed the Exit button!!");
-
-    }
-}
 public class Main {
 
-
     public static void main(String[] args)throws FileNotFoundException, Exception  {
+
         //Black Panel
         JPanel auth = new JPanel();
         auth.setBackground(Color.black);
